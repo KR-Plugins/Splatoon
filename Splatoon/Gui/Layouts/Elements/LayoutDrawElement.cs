@@ -348,7 +348,7 @@ unsafe partial class CGui
                     ImGui.SameLine();
                     if (ImGui.Button("Add".Loc()+"##byactionname" + i + k))
                     {
-                        foreach (var x in Svc.Data.GetExcelSheet<Lumina.Excel.GeneratedSheets.Action>().Union(Svc.Data.GetExcelSheet<Lumina.Excel.GeneratedSheets.Action>(Dalamud.ClientLanguage.English)))
+                        foreach (var x in Svc.Data.GetExcelSheet<Lumina.Excel.GeneratedSheets.Action>().Union(Svc.Data.GetExcelSheet<Lumina.Excel.GeneratedSheets.Action>(Dalamud.ClientLanguage.Korean)))
                         {
                             if (x.Name.ToString().Equals(ActionName, StringComparison.OrdinalIgnoreCase))
                             {
@@ -393,7 +393,7 @@ unsafe partial class CGui
                     ImGui.SameLine();
                     if (ImGui.Button("Add".Loc()+"##bybuffname" + i + k))
                     {
-                        foreach (var x in Svc.Data.GetExcelSheet<Status>().Union(Svc.Data.GetExcelSheet<Status>(ClientLanguage.English)))
+                        foreach (var x in Svc.Data.GetExcelSheet<Status>().Union(Svc.Data.GetExcelSheet<Status>(ClientLanguage.Korean)))
                         {
                             if (x.Name.ToString().Equals(BuffName, StringComparison.OrdinalIgnoreCase))
                             {

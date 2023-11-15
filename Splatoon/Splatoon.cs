@@ -138,7 +138,8 @@ public unsafe class Splatoon : IDalamudPlugin
         foreach (var x in Svc.Data.GetExcelSheet<BNpcName>(ClientLanguage.English)
             .Union(Svc.Data.GetExcelSheet<BNpcName>(ClientLanguage.French))
             .Union(Svc.Data.GetExcelSheet<BNpcName>(ClientLanguage.Japanese))
-            .Union(Svc.Data.GetExcelSheet<BNpcName>(ClientLanguage.German)))
+            .Union(Svc.Data.GetExcelSheet<BNpcName>(ClientLanguage.German))
+            .Union(Svc.Data.GetExcelSheet<BNpcName>(ClientLanguage.Korean)))
         {
             if (x.Singular != "")
             {
